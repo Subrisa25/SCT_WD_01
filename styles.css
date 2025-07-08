@@ -1,0 +1,90 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    transition: background 0.3s;
+    z-index: 1000;
+}
+
+/* Sticky Effect */
+nav.scrolled {
+    background: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+#home {
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?nature') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 50px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+/* Section Styles */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+/* Different Background Colors */
+#about { background: lightblue; }
+#services { background: lightgreen; }
+#contact { background: lightcoral; }
